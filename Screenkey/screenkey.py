@@ -67,8 +67,8 @@ class Screenkey(gtk.Window):
         if not self.options:
             self.options = {
                 'timeout': 2.5,
-                'position': POS_KEEP,
-                'size': SIZE_MEDIUM,
+                'position': POS_TOP,
+                'size': SIZE_SMALL,
                 'mode': MODE_NORMAL,
                 }
 
