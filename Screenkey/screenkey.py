@@ -225,7 +225,8 @@ class Screenkey(gtk.Window):
         """Set window position."""
         window_width, window_height = self.get_size()
         if setting == POS_TOP:
-            self.move(0, window_height * 2)
+            self.set_type_hint(gtk.gdk.WINDOW_TYPE_HINT_DOCK)
+            self.move(0, 0)
         if setting == POS_CENTER:
             self.move(0, self.screen_height / 2)
         if setting == POS_BOTTOM:
