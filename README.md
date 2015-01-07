@@ -3,6 +3,17 @@ screenkey
 
 Fork of http://launchpad.net/screenkey
 
+What's up with nilcons?
+=======================
+We have "forked" the fork :)
+
+Not really, this repository is just some small changes to make
+screenkey more viable as a teaching tool while keeping remote courses
+over VNC.  This use case is a bit different than recording a
+screencast, so we have adjusted the defaults a little bit and "fixed"
+one exception that made screenkey impossible to start on a modern
+Ubuntu.
+
 What's up?
 ==========
 
