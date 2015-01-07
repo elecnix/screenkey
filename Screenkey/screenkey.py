@@ -217,7 +217,7 @@ class Screenkey(gtk.Window):
         if setting == SIZE_MEDIUM:
             window_height = 12 * self.screen_height / 100
         if setting == SIZE_SMALL:
-            window_height = 8 * self.screen_height / 100
+            window_height = 4 * self.screen_height / 100
 
         self.resize(window_width, window_height)
 
