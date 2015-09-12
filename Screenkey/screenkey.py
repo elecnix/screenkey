@@ -60,7 +60,7 @@ class Screenkey(gtk.Window):
     STATE_FILE = os.path.join(glib.get_user_cache_dir(), 
                               'screenkey.dat')
 
-    def __init__(self, logger, nodetach, nohide, bg, fg, nosudo, window_id):
+    def __init__(self, logger, nodetach, nohide, bg, fg, size, nosudo, window_id):
         gtk.Window.__init__(self)
         self.timer = None
         self.logger = logger
@@ -70,7 +70,7 @@ class Screenkey(gtk.Window):
             self.options = {
                 'timeout': 2.5,
                 'position': POS_BOTTOM,
-                'size': SIZE_SMALL,
+                'size': size,
                 'mode': MODE_NORMAL,
                 }
 
