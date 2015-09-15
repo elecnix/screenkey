@@ -44,6 +44,8 @@ def Main():
         dest="bg", default="black", help=_("background color (in #RRGGBB format)"))
     parser.add_option("--fg", action="store",
         dest="fg", default="white", help=_("foreground color"))
+    parser.add_option("-s", "--size", type="int",
+        dest="size", default=2, help=_("size (small=2, medium=1, large=0)"))
     parser.add_option("--no-sudo", action="store_true",
         dest="nosudo", default="white",
         help=_("do not perform very expensive sudo running check"))
@@ -70,7 +72,7 @@ def Main():
 
     s = Screenkey(logger=logger, nodetach=options.nodetach,
         nohide=options.nohide,
-        bg=options.bg, fg=options.fg,
+        bg=options.bg, fg=options.fg, size=options.size,
         nosudo=options.nosudo,
         window_id=options.window_id)
     try:
